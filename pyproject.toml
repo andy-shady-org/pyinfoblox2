@@ -1,0 +1,41 @@
+[project]
+name = "pyinfoblox"
+version = "1.0.0"
+description = "Python client for Infoblox WAPI"
+authors = [
+    {name="Andy Wilson", email="andy@shady.org"},
+]
+license = {file="LICENCE"}
+readme = "README.md"
+keywords = ["infoblox", "python", "pyinfoblox"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable"
+]
+dependencies = [
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/andy-shady-org/pyinfoblox"
+Documentation = "https://github.com/andy-shady-org/pyinfoblox/README.md"
+Repository = "https://github.com/andy-shady-org/pyinfoblox"
+Issues = "https://github.com/andy-shady-org/pyinfoblox/issues"
+
+[build-system]
+requires = ['setuptools >= 64']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.packages.find]
+exclude = ["examples*", "media*", "*.tests*"]
+
+dependencies = [
+    "MarkupSafe>=3.0.2",
+    "httpx>=0.28.1",
+    "PyYAML",
+    "aiofiles",
+    "ijson",
+    "alive-progress"
+]
+
+[tool.setuptools.package-data]
+
