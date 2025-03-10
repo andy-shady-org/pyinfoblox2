@@ -8,10 +8,7 @@ PyInfoblox2 is a Python client wrapper for connecting to and performing actions 
 Contributions
 =============
 
-pyinfoblox2 is hosted on
-`Github <https://github.com/andy-shady-org/pyinfoblox2>`_. Please contribute
-by reporting issues, suggesting features or by sending patches
-using pull requests.
+Please contribute by reporting issues, suggesting features or by sending patches using pull requests.
 
 Installation
 ------------
