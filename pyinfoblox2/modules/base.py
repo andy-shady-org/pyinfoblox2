@@ -696,6 +696,8 @@ class IPHelpers(Base):
             self.options.append(self._process_dhcp_option(name, num, use, value, vendor_class))
 
     def _parse_options(self, options):
+        if not options:
+            options = list()
         if isinstance(options, list):
             for x in options:
                 if isinstance(x, tuple) and len(x) == 5:
