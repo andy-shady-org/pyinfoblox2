@@ -391,8 +391,8 @@ When wishing to create a host record using the next IP address within a given ne
 
     from pyinfoblox2 import *
     client = InfobloxClient(server, username, password, version)
-    host1 = Host.add(client, ip_address='10.10.10.0/24', description=None, mac=None, conf_dhcp=True, pxe=None, options=[], view='default', username=None, **extattrs)
-    host2 = Host.add(client, ip_address='10.10.10.1-10.10.10.5', description=None, mac=None, conf_dhcp=True, pxe=None, options=[], view='default', username=None, **extattrs)
+    host1 = Host.add(client, name='test.example.com', ip_address='10.10.10.0/24', description=None, mac=None, conf_dhcp=True, pxe=None, options=[], view='default', username=None, **extattrs)
+    host2 = Host.add(client, name='test.example.com', ip_address='10.10.10.1-10.10.10.5', description=None, mac=None, conf_dhcp=True, pxe=None, options=[], view='default', username=None, **extattrs)
 
 
 When creating a network, as above, we can utilize the internal Infoblox functionality to select the next available network within a given container.
