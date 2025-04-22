@@ -7,7 +7,7 @@ Welcome to PyInfoblox2 documentation!
 
 Author: Andy Wilson |br|
 Email:  andy@shady.org |br|
-Version: 1.0.0 |br|
+Version: 1.0.1 |br|
 Package: PyInfoblox2 |br|
 Description: Infoblox Python Client |br|
 Function: To facilitate automated interaction with Infoblox appliances |br|
