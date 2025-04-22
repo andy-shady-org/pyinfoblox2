@@ -84,20 +84,6 @@ class InfobloxClient(object):
             self.logger.setLevel(logging.DEBUG)
             self.logger.debug('Setting level to DEBUG')
 
-    def __del__(self):
-        """
-        Class destructor.
-        The destructor mainly takes care of "gracefully" terminating the session towards Infoblox.
-        """
-        try:
-            if self.session:
-                self.query('logout', 'post')
-                self.session.close()
-                self.session = None
-        except httpx.HTTPError:
-            self.session.close()
-            self.session = None
-
     def __getattr__(self, item):
         """
         Overload of getattr method to handle HTTP method calls

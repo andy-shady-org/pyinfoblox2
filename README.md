@@ -1,7 +1,18 @@
 PyInfoblox2
 ===========
 
-![image info](https://readthedocs.org/projects/pyinfoblox2/badge/?version=latest)
+<div align="center">
+<a href="https://pypi.org/project/pyinfoblox2/"><img src="https://img.shields.io/pypi/v/netbox-security" alt="PyPi"/></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/stargazers"><img src="https://img.shields.io/github/stars/andy-shady-org/pyinfoblox2?style=flat" alt="Stars Badge"/></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/network/members"><img src="https://img.shields.io/github/forks/andy-shady-org/pyinfoblox2?style=flat" alt="Forks Badge"/></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/issues"><img src="https://img.shields.io/github/issues/andy-shady-org/pyinfoblox2" alt="Issues Badge"/></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/pulls"><img src="https://img.shields.io/github/issues-pr/andy-shady-org/pyinfoblox2" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/andy-shady-org/pyinfoblox2?color=2b9348"></a>
+<a href="https://github.com/andy-shady-org/pyinfoblox2/blob/master/LICENSE"><img src="https://img.shields.io/github/license/andy-shady-org/pyinfoblox2?color=2b9348" alt="License Badge"/></a>
+<a href="https://pepy.tech/project/pyinfoblox2"><img alt="Downloads" src="https://static.pepy.tech/badge/pyinfoblox2"></a>
+<a href="https://pepy.tech/project/pyinfoblox2"><img alt="Downloads/Week" src="https://static.pepy.tech/badge/pyinfoblox2/month"></a>
+<a href="https://pepy.tech/project/pyinfoblox2"><img alt="Downloads/Month" src="https://static.pepy.tech/badge/pyinfoblox2/week"></a>
+</div>
 
 PyInfoblox2 is a Python client wrapper for connecting to and performing actions against Infoblox appliances. 
 

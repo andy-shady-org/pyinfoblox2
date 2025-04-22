@@ -457,16 +457,16 @@ class Host(IPHelpers):
         :return: Host Class
         :rtype: Host
         """
-        host = cls(client, name, view=view)
-        host.configure_for_dhcp = conf_dhcp
-        host.mac_address = mac
-        host.options = options
-        host.ip_address = ip_address
-        host.description = description if description else ''
+        obj = cls(client, name, view=view)
+        obj.configure_for_dhcp = conf_dhcp
+        obj.mac_address = mac if mac else '00:00:00:00:00:00'
+        obj._parse_options(options)
+        obj.ip_address = ip_address
+        obj.description = description if description else ''
         if pxe and isinstance(pxe, dict):
-            host.pxe = pxe
-        host.create(username, **extattrs)
-        return host
+            obj.pxe = pxe
+        obj.create(username, **extattrs)
+        return obj
 
     @classmethod
     def addv6(cls, client, name, ip_address, description=None, mac='00:00:00:00:00:00', conf_dhcp=True, pxe=None, options=None, view='default', username=None, **extattrs):
@@ -496,16 +496,16 @@ class Host(IPHelpers):
         :return: Host Class
         :rtype: Host
         """
-        host = cls(client, name, view=view)
-        host.configure_for_dhcp = conf_dhcp
-        host.mac_address = mac
-        host.options = options
-        host.ipv6_address = ip_address
-        host.description = description if description else ''
+        obj = cls(client, name, view=view)
+        obj.configure_for_dhcp = conf_dhcp
+        obj.mac_address = mac if mac else '00:00:00:00:00:00'
+        obj._parse_options(options)
+        obj.ipv6_address = ip_address
+        obj.description = description if description else ''
         if pxe and isinstance(pxe, dict):
-            host.pxe = pxe
-        host.create(username, **extattrs)
-        return host
+            obj.pxe = pxe
+        obj.create(username, **extattrs)
+        return obj
 
     def add_ip(self, ip_address, mac=None, conf_dhcp=True, options=[], username=None):
         """
