@@ -2,7 +2,7 @@ PyInfoblox2
 ===========
 
 <div align="center">
-<a href="https://pypi.org/project/pyinfoblox2/"><img src="https://img.shields.io/pypi/v/netbox-security" alt="PyPi"/></a>
+<a href="https://pypi.org/project/pyinfoblox2/"><img src="https://img.shields.io/pypi/v/pyinfoblox2" alt="PyPi"/></a>
 <a href="https://github.com/andy-shady-org/pyinfoblox2/stargazers"><img src="https://img.shields.io/github/stars/andy-shady-org/pyinfoblox2?style=flat" alt="Stars Badge"/></a>
 <a href="https://github.com/andy-shady-org/pyinfoblox2/network/members"><img src="https://img.shields.io/github/forks/andy-shady-org/pyinfoblox2?style=flat" alt="Forks Badge"/></a>
 <a href="https://github.com/andy-shady-org/pyinfoblox2/issues"><img src="https://img.shields.io/github/issues/andy-shady-org/pyinfoblox2" alt="Issues Badge"/></a>
